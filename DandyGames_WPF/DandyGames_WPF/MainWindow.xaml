@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DandyGames_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="600" Width="800"
+        Background="#FF030303">
     <Grid>
-        
+        <DockPanel>
+            <StatusBar DockPanel.Dock="Bottom">
+                <StatusBarItem>
+                    <TextBlock Text="Игр в базе: " FontSize="13"/>
+                </StatusBarItem>
+                <StatusBarItem>
+                    <TextBlock Text="Катриджей в базе: "/>
+                </StatusBarItem>
+                <StatusBarItem HorizontalAlignment="Right" >
+                    <ComboBox x:Name="cmbxTheme" Width="120"/>
+                </StatusBarItem>
+            </StatusBar>
+            
+            <TabControl>
+                <TabItem Header="Поиск игр">
+
+                </TabItem>
+                <TabItem Header="Добавление игр">
+
+                </TabItem>
+            </TabControl>
+            
+        </DockPanel>
     </Grid>
 </Window>
